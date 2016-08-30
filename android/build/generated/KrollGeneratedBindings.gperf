@@ -1,0 +1,62 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name NfcBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "ti.nfc.NfcTagProxy.h"
+#include "ti.nfc.tech.TagTechnologyNfcFProxy.h"
+#include "ti.nfc.tech.TagTechnologyNdefFormatableProxy.h"
+#include "ti.nfc.records.NdefRecordSmartPosterProxy.h"
+#include "ti.nfc.tech.TagTechnologyNfcAProxy.h"
+#include "ti.nfc.records.NdefRecordMediaProxy.h"
+#include "ti.nfc.NfcModule.h"
+#include "ti.nfc.records.NdefRecordExternalProxy.h"
+#include "ti.nfc.records.NdefRecordUnknownProxy.h"
+#include "ti.nfc.tech.TagTechnologyMifareClassicProxy.h"
+#include "ti.nfc.NfcForegroundDispatchFilter.h"
+#include "ti.nfc.records.NdefRecordUriProxy.h"
+#include "ti.nfc.records.NdefRecordTextProxy.h"
+#include "ti.nfc.NfcAdapterProxy.h"
+#include "ti.nfc.NdefMessageProxy.h"
+#include "ti.nfc.records.NdefRecordProxy.h"
+#include "ti.nfc.tech.TagTechnologyIsoDepProxy.h"
+#include "ti.nfc.records.NdefRecordApplicationProxy.h"
+#include "ti.nfc.tech.TagTechnologyProxy.h"
+#include "ti.nfc.tech.TagTechnologyNdefProxy.h"
+#include "ti.nfc.tech.TagTechnologyMifareUltralightProxy.h"
+#include "ti.nfc.tech.TagTechnologyNfcBProxy.h"
+#include "ti.nfc.records.NdefRecordEmptyProxy.h"
+#include "ti.nfc.tech.TagTechnologyNfcVProxy.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+ti.nfc.NfcTagProxy, ::ti::nfc::NfcTagProxy::bindProxy, ::ti::nfc::NfcTagProxy::dispose
+ti.nfc.tech.TagTechnologyNfcFProxy, ::ti::nfc::nfc::TagTechnologyNfcFProxy::bindProxy, ::ti::nfc::nfc::TagTechnologyNfcFProxy::dispose
+ti.nfc.tech.TagTechnologyNdefFormatableProxy, ::ti::nfc::nfc::TagTechnologyNdefFormatableProxy::bindProxy, ::ti::nfc::nfc::TagTechnologyNdefFormatableProxy::dispose
+ti.nfc.records.NdefRecordSmartPosterProxy, ::ti::nfc::nfc::NdefRecordSmartPosterProxy::bindProxy, ::ti::nfc::nfc::NdefRecordSmartPosterProxy::dispose
+ti.nfc.tech.TagTechnologyNfcAProxy, ::ti::nfc::nfc::TagTechnologyNfcAProxy::bindProxy, ::ti::nfc::nfc::TagTechnologyNfcAProxy::dispose
+ti.nfc.records.NdefRecordMediaProxy, ::ti::nfc::nfc::NdefRecordMediaProxy::bindProxy, ::ti::nfc::nfc::NdefRecordMediaProxy::dispose
+ti.nfc.NfcModule, ::ti::nfc::NfcModule::bindProxy, ::ti::nfc::NfcModule::dispose
+ti.nfc.records.NdefRecordExternalProxy, ::ti::nfc::nfc::NdefRecordExternalProxy::bindProxy, ::ti::nfc::nfc::NdefRecordExternalProxy::dispose
+ti.nfc.records.NdefRecordUnknownProxy, ::ti::nfc::NdefRecordUnknownProxy::bindProxy, ::ti::nfc::NdefRecordUnknownProxy::dispose
+ti.nfc.tech.TagTechnologyMifareClassicProxy, ::ti::nfc::nfc::TagTechnologyMifareClassicProxy::bindProxy, ::ti::nfc::nfc::TagTechnologyMifareClassicProxy::dispose
+ti.nfc.NfcForegroundDispatchFilter, ::ti::nfc::nfc::NfcForegroundDispatchFilter::bindProxy, ::ti::nfc::nfc::NfcForegroundDispatchFilter::dispose
+ti.nfc.records.NdefRecordUriProxy, ::ti::nfc::nfc::NdefRecordUriProxy::bindProxy, ::ti::nfc::nfc::NdefRecordUriProxy::dispose
+ti.nfc.records.NdefRecordTextProxy, ::ti::nfc::nfc::NdefRecordTextProxy::bindProxy, ::ti::nfc::nfc::NdefRecordTextProxy::dispose
+ti.nfc.NfcAdapterProxy, ::ti::nfc::nfc::NfcAdapterProxy::bindProxy, ::ti::nfc::nfc::NfcAdapterProxy::dispose
+ti.nfc.NdefMessageProxy, ::ti::nfc::nfc::NdefMessageProxy::bindProxy, ::ti::nfc::nfc::NdefMessageProxy::dispose
+ti.nfc.records.NdefRecordProxy, ::ti::nfc::NdefRecordProxy::bindProxy, ::ti::nfc::NdefRecordProxy::dispose
+ti.nfc.tech.TagTechnologyIsoDepProxy, ::ti::nfc::nfc::TagTechnologyIsoDepProxy::bindProxy, ::ti::nfc::nfc::TagTechnologyIsoDepProxy::dispose
+ti.nfc.records.NdefRecordApplicationProxy, ::ti::nfc::nfc::NdefRecordApplicationProxy::bindProxy, ::ti::nfc::nfc::NdefRecordApplicationProxy::dispose
+ti.nfc.tech.TagTechnologyProxy, ::ti::nfc::TagTechnologyProxy::bindProxy, ::ti::nfc::TagTechnologyProxy::dispose
+ti.nfc.tech.TagTechnologyNdefProxy, ::ti::nfc::nfc::TagTechnologyNdefProxy::bindProxy, ::ti::nfc::nfc::TagTechnologyNdefProxy::dispose
+ti.nfc.tech.TagTechnologyMifareUltralightProxy, ::ti::nfc::nfc::TagTechnologyMifareUltralightProxy::bindProxy, ::ti::nfc::nfc::TagTechnologyMifareUltralightProxy::dispose
+ti.nfc.tech.TagTechnologyNfcBProxy, ::ti::nfc::nfc::TagTechnologyNfcBProxy::bindProxy, ::ti::nfc::nfc::TagTechnologyNfcBProxy::dispose
+ti.nfc.records.NdefRecordEmptyProxy, ::ti::nfc::nfc::NdefRecordEmptyProxy::bindProxy, ::ti::nfc::nfc::NdefRecordEmptyProxy::dispose
+ti.nfc.tech.TagTechnologyNfcVProxy, ::ti::nfc::nfc::TagTechnologyNfcVProxy::bindProxy, ::ti::nfc::nfc::TagTechnologyNfcVProxy::dispose
+%%

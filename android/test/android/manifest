@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: armeabi armeabi-v7a x86
+description: test
+author: Sitata
+license: Specify your license
+copyright: Copyright (c) 2016 by Your Company
+
+# these should not be edited
+name: test
+moduleid: test
+guid: e2669f8f-d855-49d9-b751-525e5bec182f
+platform: android
+minsdk: 5.4.0.GA
